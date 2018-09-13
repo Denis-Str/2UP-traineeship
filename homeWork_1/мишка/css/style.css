@@ -14,7 +14,8 @@
     background-color: #92806a;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 
@@ -28,7 +29,9 @@
     height: 15px;
     top: 110px;
     left: 190px;
-    transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+        -ms-transform: skewX(-15deg);
+            transform: skewX(-15deg);
 }
 
 .hair::after,
@@ -69,7 +72,8 @@
     height: 50px;
     border-radius: 50%;
     border: 25px solid #92806a;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .ear-left {

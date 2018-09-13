@@ -48,11 +48,11 @@
 	font-weight: bold;
 	-webkit-animation-name: translate;
 	        animation-name: translate;
-	-webkit-animation-duration: 4.0s;
-	        animation-duration: 4.0s;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
 	-webkit-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
-	-webkit-transition-timing-function: linear;
-	     -o-transition-timing-function: linear;
-	        transition-timing-function: linear;
+	-webkit-transition-timing-function: ease-in;
+	     -o-transition-timing-function: ease-in;
+	        transition-timing-function: ease-in;
 }
