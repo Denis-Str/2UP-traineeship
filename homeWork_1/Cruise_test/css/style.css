@@ -1,0 +1,709 @@
+/*============*/
+/* ОБЩИЕ СТИЛИ */
+/*============*/
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 1673px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	color: #0d3351;
+	font-family: 'Roboto Slab', 'Arial', sans-serif, serif;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: #0d3351;
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.wrap {
+	width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.price-hidden {
+	visibility: hidden;
+}
+
+.cardCruisePopup {
+	visibility: hidden;
+}
+
+.popup-show {
+	visibility: visible;
+}
+
+.mainNav {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+}
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+	font-size: 14px;
+	line-height: 18px;
+	width: 202px;
+	color: #ffffff;
+	background-color: #33c7fd;
+	border: none;
+}
+
+.btn:hover {
+	background-color: #13b0e9;
+}
+
+.btn:active {
+	background-color: #64d6ff;
+}
+
+.mainNav,
+.mainNav,
+.userMenu,
+.CruiseDiscount,
+.CruiseOther,
+.ImgMiniList,
+.footerNav,
+.SocialsList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*============*/
+/* СЕТКА */
+/*============*/
+.mainHeader,
+.catalogCruise,
+.catalogPromo,
+.CruiseDiscount,
+.CruiseOther {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+
+.mainHeader,
+.headerCaption,
+.catalogCruise,
+.CruiseDiscount {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+/*============*/
+/* HEADER */
+/*============*/
+.mainHeader {
+	min-height: 647px;
+	background-image: url(../img/bgheader.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.mainMenu {
+	position: relative;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	min-height: 65px;
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+
+.btnMainNav {
+	position: relative;
+	width: 22px;
+	height: 16px;
+	border: none;
+	border-top: 2px solid #0d3351;
+	border-bottom: 2px solid #0d3351;
+	background-color: transparent;
+	cursor: pointer;
+	margin-right: 585px;
+	margin-top: 4px;
+}
+
+.btnMainNav::after {
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 2px;
+	background-color: #0d3351;
+	left: 0;
+	top: 40%;
+}
+
+.mainNav {
+	position: absolute;
+	z-index: 1;
+	left: 15px;
+	top: 60px;
+	width: 420px;
+	min-height: 411px;
+	background-color: #0d3351;
+	padding-top: 56px;
+}
+
+.mainNavItem a {
+	font-family: 'Roboto Slab';
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 49px;
+	letter-spacing: 0.9px;
+	padding-left: 45px;
+}
+
+.userMenu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 390px;
+	margin-top: 5px;
+}
+
+.userMenuItem {
+	position: relative;
+}
+
+.userMenuItem a,
+.headerСontacts,
+.support {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	color: #0d3351;
+}
+
+.headerСontacts p {
+	letter-spacing: 0;
+}
+
+.account {
+	padding-left: 40px;
+}
+
+.cash {
+	padding-left: 70px;
+}
+
+.language {
+	padding-left: 49px;
+}
+
+.account a::before,
+.cash a::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 12px;
+	background-repeat: no-repeat;
+	top: 5px;
+	margin-left: -19px;
+}
+
+.account a::before {
+	background-image: url(../img/user.svg);
+}
+
+.cash a::before {
+	background-image: url(../img/cash.svg);
+}
+
+.account a::after,
+.cash a::after,
+.language a::after {
+	content: "";
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #0d3351;
+	top: 8px;
+	margin-left: 5px;
+}
+
+.headerСontacts a {
+	font-weight: bold;
+}
+
+.support {
+	font-size: 10px;
+}
+
+.headerCaption {
+	position: relative;
+	text-align: center;
+}
+
+.headerCaptionText {
+	margin: 0;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	color: #0d3351;
+	margin-bottom: 73px;
+}
+
+.headerCaptionText span {
+	font-size: 100px;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 60px;
+	letter-spacing: -2.5px;
+}
+
+.buttonСhoiceCruise {
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.buttonСhoiceCruise::after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	width: 60px;
+	height: 298px;
+	background-image: url(../img/path.svg);
+	background-repeat: no-repeat;
+	margin-top: 45px;
+	margin-left: -95px;
+}
+
+/*============*/
+/* МАИН */
+/*============*/
+.CruiseCaption,
+.CruiseRoute,
+.CruiseDuration,
+.CruisePrice,
+.cardChart p {
+	margin: 0;
+}
+
+.content {
+	position: relative;
+	background-color: #f3f3f3;
+	width: 1673px;
+	margin: 0 auto;
+}
+
+.catalogCruise {
+	position: relative;
+	padding-top: 107px;
+}
+
+.catalogCruiseCaption,
+.catalogSort {
+	margin: 0;
+	text-align: center;
+	letter-spacing: 1.8px;
+}
+
+.catalogCruiseCaption {
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: normal;
+}
+
+.catalogSort {
+	position: relative;
+	font-family: 'Arial', sans-serif;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.catalogSort span {
+	font-style: italic;
+}
+
+.catalogSort::after {
+	content: "";
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #0d3351;
+	top: 13px;
+	margin-left: 10px;
+}
+
+.catalogPromo,
+.CruiseOther {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.catalogPromo {
+	min-height: 628px;
+	margin-bottom: 20px;
+}
+
+.CruiseOther {
+	margin-bottom: 25px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.CruiseHit,
+.CruiseDiscount,
+.CruiseOtherItem {
+	width: 555px;
+}
+
+.CruiseDiscountItem {
+	min-height: 304px;
+	padding-top: 125px;
+	margin-bottom: 20px;
+}
+
+.CruiseDiscountItem:last-child {
+	margin-bottom: 0;
+}
+
+.CruiseOtherItem {
+	min-height: 406px;
+	padding-top: 225px;
+	margin-bottom: 20px;
+}
+
+.CruiseHit,
+.CruiseDiscountItem,
+.CruiseOtherItem {
+	background-color: #ffffff;
+}
+
+.CruiseCaption a {
+	font-size: 18px;
+	line-height: 48px;
+	color: #00a2dd;
+	letter-spacing: 0.9px;
+}
+
+.CruisePrice {
+	font-size: 30px;
+	line-height: 48px;
+	
+}
+
+.PriceNew {
+	margin-right: 20px;
+}
+
+.CruisePrice del {
+	font-size: 18px;
+	line-height: 48px;
+	opacity: 0.5;
+}
+
+.CruiseRoute,
+.CruiseDuration {
+	margin-bottom: 10px;
+}
+
+.CruiseCaption {
+	position: relative;
+}
+
+.CruiseHit,
+.CruiseDiscountItem,
+.CruiseOtherItem {
+	padding-left: 38px;
+}
+
+.CruiseHit,
+.CruiseDiscountItem,
+.HitTag,
+.DiscountTag,
+.event,
+.discount,
+.CruiseOtherItem:nth-child(1),
+.CruiseOtherItem:nth-child(2) {
+	background-repeat: no-repeat;
+}
+
+.CruiseHit {
+	background-image: url(../img/bgHit.jpg);
+	padding-top: 447px;
+}
+
+.event {
+	background-image: url(../img/Discount1.jpg);
+}
+
+.discount {
+	background-image: url(../img/Discount2.jpg);
+}
+
+.CruiseOtherItem:nth-child(1) {
+	background-image: url(../img/Other1.jpg);
+}
+
+.CruiseOtherItem:nth-child(2) {
+	background-image: url(../img/Other2.jpg);
+}
+
+.HitTag,
+.DiscountTag {
+	position: absolute;
+	width: 89px;
+	height: 101px;
+	font-family: 'Arial', sans-serif;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 28px;
+}
+
+.HitTag {
+	background-image: url(../img/hitTag.png);
+	top: -454px;
+	left: 381px;
+}
+
+.DiscountTag {
+	background-image: url(../img/DiscountTag.png);
+	padding-top: 28px;
+	top: -133px;
+	left: 381px;
+}
+
+.CruiseLink::after {
+	content: "";
+	position: absolute;
+	border-top: 4px solid transparent;
+	border-left: 6px solid #33c7fd;
+	border-bottom: 4px solid transparent;
+	top: 22px;
+	margin-left: 10px;
+}
+
+.CruiseMore {
+	margin: 0 auto;
+	margin-bottom: 62px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.CruiseMore::after {
+	content: "";
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #ffffff;
+	margin-top: 8px;
+	margin-left: 6px;
+}
+
+/*============*/
+/* FOOTER */
+/*============*/
+.mainfooter {
+	font-family: 'Arial', sans-serif;
+	padding-top: 20px;
+	line-height: 24px;
+}
+
+.footerNav {
+	margin-right: 144px;
+}
+
+.SocialsCaption {
+	margin: 0;
+	padding-left: 5px;
+}
+
+.SocialsList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-top: 4px;
+	padding-left: 6px;
+	margin-right: 445px;
+}
+
+.SocialsItem a {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: #0d3351;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.vk {
+	background-image: url(../img/vk.svg);
+}
+
+.ok {
+	background-image: url(../img/ok.svg);
+}
+
+.yt {
+	background-image: url(../img/yt.svg);
+}
+
+.insta {
+	background-image: url(../img/insta.svg);
+}
+
+.footerСontacts a {
+	font-weight: bold;
+}
+
+.copyright {
+	margin: 0;
+}
+
+/*============*/
+/* CARD */
+/*============*/
+.cardCruisePopup {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 11;
+	top: 50%;
+	margin-top: -215px;
+	left: 50%;
+	margin-left: -425px;
+	width: 850px;
+	min-height: 412px;
+	background-color: #ffffff;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 110px;
+}
+
+.popupClose {
+	position: absolute;
+	border: 0;
+	background-color: transparent;
+	right: 30px;
+	top: 40px;
+}
+
+.popupClose::after,
+.popupClose::before {
+	content: "";
+	position: absolute;
+	cursor: pointer;
+	z-index: 12;
+	width: 15px;
+	height: 2px;
+	background-color: #8699a8;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.popupClose::before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.cardGallery,
+.cardContent {
+	width: 360px;
+}
+
+.cardGallery {
+	margin: 0;
+	padding-top: 17px;
+}
+
+.cardImgFull {
+	margin-bottom: 5px;
+}
+
+.ImgMiniList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.cardChart {
+	line-height: 24px;
+}
+
+.cardContent .CruiseCaption {
+	margin-bottom: 20px;
+}
+
+.cardChart .location {
+	margin-bottom: 3px;
+}
+
+.cardChart .CruisePrice {
+	margin-bottom: 15px;
+}
+
+.popupSubmit {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 88px;
+}
