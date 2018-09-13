@@ -1,0 +1,153 @@
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+    background-color: cadetblue;
+    z-index: -2;
+    
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+
+.hair {
+    position: absolute;
+    border: 3px solid bisque;
+    border-top: transparent;
+    border-bottom: transparent;
+    width: 15px;
+    height: 15px;
+    top: 110px;
+    left: 190px;
+    transform: skewX(-15deg);
+}
+
+.hair::after,
+.eye::after,
+.nose_small::after,
+.mouth::after,
+.mouth::before {
+    position: absolute;
+    content: "";
+}
+
+.hair::after,
+.ear,
+.nose,
+.mouth::after,
+.mouth::before {
+    background-color: bisque;
+}
+
+.hair::after {   
+    width: 3px;
+    height: 15px;
+    
+    margin-left: 6px;
+}
+
+.ear,
+.nose,
+.nose_small,
+.eye,
+.mouth {
+    position: absolute;
+}
+
+.ear {
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 25px solid darkgoldenrod;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.ear-left {
+    top: 70px;
+    left: 50px;
+}
+
+.ear-right {
+    top: 60px;
+    left: 240px;
+}
+
+.nose {
+    width: 90px;
+    height: 110px;
+    border-radius: 20%;
+    top: 160px;
+    left: 155px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.nose_small {
+    width: 60px;
+    height: 45px;
+    border-radius: 35%;
+    background-color: black;
+    top: 180px;
+    left: 170px;  
+}
+
+.eye {
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    top: 150px;
+    left: 150px;
+}
+
+.eye-right {
+    left: 225px;
+}
+
+.eye::after,
+.nose_small::after {
+    width: 5px;
+    height: 3px;
+    background-color: white;
+    left: 10px;
+    top: 3px;
+    border-radius: 30%;
+}
+
+.nose_small::after {
+    width: 10px;
+    left: 35px;
+    top: 10px;
+}
+
+.mouth {
+   height: 30px;
+   width: 5px; 
+   background-color: black;
+   top: 220px;
+   left: 198px;
+}
+
+.mouth::after,
+.mouth::before {
+    width: 25px;
+    height: 10px;
+    border: 5px solid black;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    border-top: transparent;
+    top: 27px;
+}
+
+.mouth::after {
+    margin-left: -30px;
+}
