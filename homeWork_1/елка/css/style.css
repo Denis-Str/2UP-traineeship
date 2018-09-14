@@ -1,0 +1,144 @@
+@keyframes translate {
+	/* 0% {
+    width: 0px;
+    height: 0px;
+    } */
+    
+    100% {
+    width: 50px;
+    height: 50px;
+	}
+}
+
+@keyframes animation_ground {
+    100% {
+    width: 85px;
+    } 
+}
+
+.container {
+    width: 500px;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 40px 50px;
+    background-color: #ffffff;
+}
+
+.background {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #e0f0e5;
+    padding-top: 120px;
+    padding-left: 195px;
+}
+
+.tree_trunk,
+.left,
+.right,
+.ground {
+    position: absolute;
+    background-color: #e3ca88;
+    width: 5px;
+    border-radius: 5px;
+}
+
+.tree_left,
+.tree_right {
+    position: absolute;
+    top: 40px;
+}
+
+.tree_left  {
+    width: 0; height: 0;
+    border-bottom: 220px solid #b73a28;
+    border-left: 65px solid transparent;
+    right: 202px;
+}
+
+.tree_right {
+    width: 0; height: 0;
+    border-bottom: 220px solid #e74731;
+    border-right: 65px solid transparent;
+    left: 198px;
+}
+
+
+.left {
+    transform: rotate(-40deg);
+}
+
+.right {
+    transform: rotate(40deg);
+}
+
+.ground {
+    background-color: #b8d5c3;
+    border-radius: 0;
+}
+
+.tree_trunk {
+    height: 200px;
+}
+
+.branches_1 {
+    height: 65px;
+    top: 200px;
+    left: 175px;
+}
+
+.branches_2 {
+    height: 50px;
+    top: 150px;
+    left: 180px;
+}
+
+.branches_3 {
+    height: 20px;
+    top: 120px;
+    left: 190px;
+}
+
+.branches_4 {
+    height: 55px;
+    top: 170px;
+    left: 212px;
+}
+
+.branches_5 {
+    height: 40px;
+    top: 130px;
+    left: 206px;
+}
+
+.ground {
+    height: 5px;
+    /* width: 85px; */
+    top: 315px;
+    left: 155px;
+}
+
+.hidden_div {outline: 1px red solid;
+    position: absolute;
+    width: 130px;
+    height: 220px;
+    top: 40px;
+    left: 133px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.animation {
+    animation-name: translate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in;
+}
+
+.animation_ground {
+    animation-name: animation_ground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in;
+}
