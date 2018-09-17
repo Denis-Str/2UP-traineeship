@@ -1,0 +1,73 @@
+.background {
+    position: relative;
+    width: 950px;
+    height: 380px;
+    background-image: url(../img/Layer.png);
+    background-repeat: repeat;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+    padding-top: 145px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.text {
+    position: absolute;
+    width: 640px;
+    min-height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 125px;
+    padding-right: 120px;
+    border-radius: 5px;
+    left: 160px;
+}
+
+.summer,
+.winter {
+    text-transform: uppercase;
+}
+
+.layer {
+    width: 900px; 
+    height: 320px;
+    position: absolute;
+    top: 30px;
+    background-color: #ffffff;
+}
+
+.img {
+    position: absolute;
+    min-width: 465px;
+    min-height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img1 {
+    background-image: url(../img/img1.jpg);
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    95% 100%,
+    0 100%);
+}
+
+.img2 {
+    background-image: url(../img/img2.jpg);
+    left: 445px;
+    clip-path: polygon(
+    5% 0,
+    100% 0,
+    100% 100%,
+    0 100%);
+}
+
