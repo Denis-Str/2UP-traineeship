@@ -1,0 +1,138 @@
+@keyframes slider-animation {
+    from {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-400px);
+    }
+
+    to {
+        transform: translate(-800px);
+    }
+
+}
+
+@keyframes btn-animation {
+	/* 0% {
+    transform: translate(0)
+    } 
+    
+     100% {
+        transform: translate(1)
+	}  */
+}
+
+.background {
+    position: relative;
+    box-sizing: border-box;
+    width: 440px;
+    height: 440px;
+    background-color: white;
+    padding: 20px;
+    outline: 1px solid #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.slider1,
+.slider2,
+.slider3 {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides {
+   width: 1200px;
+}
+
+.slider1 {
+    background-color: #9a59b5;
+}
+
+.slider2 {
+    background-color: #3598db;
+}
+
+.slider3 {
+    background-color: #1bbc9b;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 170px;
+    left: 115px;
+    z-index: 5;
+
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffffff;  
+}
+
+.btn1:checked ~.slider-controls .circle {
+   transform: translate(0);
+     
+}
+
+.btn2:checked ~.slider-controls .circle {
+    transform: translate(69px);
+   
+}
+
+.btn3:checked ~.slider-controls .circle {
+    transform: translate(138px);
+}
+
+.btn1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+  
+.btn2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-400px);
+  }
+
+.btn3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-800px);
+}
+
+.slider-animation {
+    animation-name: slider-animation;
+    animation-duration: 2s;
+}
+
+.circle {
+    animation-name: btn-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    /* animation-fill-mode: forwards; */
+}
