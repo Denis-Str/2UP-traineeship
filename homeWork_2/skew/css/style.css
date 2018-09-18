@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Roboto", "Arial", sans-serif;
     padding-top: 145px;
+    margin: 0 auto;
 }
 
 *,
@@ -41,33 +42,32 @@
     position: absolute;
     top: 30px;
     background-color: #ffffff;
+    overflow: hidden;
+    
 }
 
 .img {
     position: absolute;
-    min-width: 465px;
+    transform: skew(-15deg);
+    min-width: 500px;
     min-height: 320px;
+    
+}
+
+
+.img1::after,
+.img2::after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 320px;
+    background-image: url(../img/img1.jpg);
+    left: -65px;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.img1 {
-    background-image: url(../img/img1.jpg);
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    95% 100%,
-    0 100%);
-}
-
-.img2 {
-    background-image: url(../img/img2.jpg);
+.img2::after {
     left: 445px;
-    clip-path: polygon(
-    5% 0,
-    100% 0,
-    100% 100%,
-    0 100%);
+    background-image: url(../img/img2.jpg);
 }
-
