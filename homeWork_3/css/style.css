@@ -83,14 +83,10 @@
 .taskList {
     width: 200px;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .taskListItem {
     position: relative;
-    display: flex;
 }
 
 .taskListItem:not(:last-child) {
@@ -108,7 +104,6 @@ svg {
     left: 175px;
     top: 5px;
     stroke: #C8D4D9;
-    transform: scale(0);
 }
 
 label::after {
@@ -121,7 +116,6 @@ label::after {
     cursor: pointer;
     left: 175px;
     top: 3px;
-    transform: scale(1);
 }
 
 label:hover {
@@ -132,11 +126,10 @@ label:hover {
     color: #C8D4D9;
 }
 
- .check:checked ~ svg {
-    transform: scale(1);
+.check:checked ~ svg {
     transition: transform 0.5s ease-in-out;     
 }
-
+ 
 .check:checked ~ label::after {
     transform: scale(0);
     transition: transform 0.5s ease-in-out; 
@@ -151,4 +144,3 @@ label:hover {
     transform: scale(1);
     transition: transform 0.5s ease-in-out;     
 }
-
