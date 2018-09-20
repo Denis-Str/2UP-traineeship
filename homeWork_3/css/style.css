@@ -1,0 +1,154 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5c625e;
+    background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.caption {
+    margin: 0;
+}
+
+.taskList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.background {
+    margin: 0 auto;
+}
+.container {
+    width: 440px;
+    height: 445px;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.background,
+.task {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.background {
+    width: 400px;
+    height: 400px;
+    padding-top: 60px;
+    padding-left: 80px;
+    background-color: #fdb731;
+}
+
+.task {
+    width: 240px;
+    height: 280px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding-top: 25px;
+}
+
+.caption {
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 77px;
+}
+
+.daytime {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.caption::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 175px;
+    background-color: #5c625e;
+    margin-top: 20px;
+    left: 130px;   
+} 
+
+.taskList {
+    width: 200px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.taskListItem {
+    position: relative;
+    display: flex;
+}
+
+.taskListItem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    visibility: hidden;
+}
+
+svg {
+    position: absolute;
+    fill: none;
+    left: 175px;
+    top: 5px;
+    stroke: #C8D4D9;
+    transform: scale(0);
+}
+
+label::after {
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #5c625e;
+    cursor: pointer;
+    left: 175px;
+    top: 3px;
+    transform: scale(1);
+}
+
+label:hover {
+    opacity: 0.5;
+}
+
+.check:checked ~ label {
+    color: #C8D4D9;
+}
+
+ .check:checked ~ svg {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;     
+}
+
+.check:checked ~ label::after {
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out; 
+}
+
+.check:not(:checked) ~ svg {
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;     
+}
+
+.check:not(:checked) ~ label::after {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;     
+}
+
