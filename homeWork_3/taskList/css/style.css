@@ -104,7 +104,7 @@ svg {
     left: 175px;
     top: 5px;
     stroke: #C8D4D9;
-    opacity: 0;
+    transform: scale(0);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ label::after {
     content:"";
     width: 15px;
     height: 15px;
-    opacity: 1;
+    background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #5c625e;
     cursor: pointer;
@@ -127,17 +127,17 @@ label:hover {
     opacity: 0.5;
 }
 
-.check:checked ~ label {
-    color: #C8D4D9;
-}
-
-.check:checked ~ svg {
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
 .check:checked ~ label::after {
     opacity: 0;
     transform: scale(1.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.check:checked ~ label  {
+    color: #C8D4D9;
+}
+
+.check:checked ~ label svg {
+    transform: scale(1);
     transition: all 0.5s ease-in-out;
 }
