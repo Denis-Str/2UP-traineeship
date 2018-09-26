@@ -1,5 +1,4 @@
 var gulp        = require('gulp'),
-    sass        = require('gulp-sass'),
     browserSync = require('browser-sync');
 
 gulp.task('mytask', function () {
@@ -7,13 +6,6 @@ gulp.task('mytask', function () {
     .pipe(Plugin())
     .pipe(gulp.dest('folder'))
 });
-
-gulp.task('sass', function () {
-    return gulp.src('app/sass/main.sass')
-    .pipe(sass())
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({stream: true}))
-})
 
 gulp.task('browser-sync', function () {
     browserSync({
@@ -24,8 +16,8 @@ gulp.task('browser-sync', function () {
     })
 })
 
-gulp.task('watch', ['browser-sync', 'sass'], function () {
-    gulp.watch('app/sass/main.sass', ['sass']);
+gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/css/main.css', browserSync.reload);
     gulp.watch('app/js/*.js', browserSync.reload);
 })
