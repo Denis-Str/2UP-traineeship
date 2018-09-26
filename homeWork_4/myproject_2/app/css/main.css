@@ -103,22 +103,26 @@ input[type="radio"].visually-hidden {
 .page-main {
 	background-color: #ffffff;
 	color: #000000;
-	margin-bottom: 80px;
+	margin-bottom: 97px;
 }
 
 .page-footer {
 	background-color: #000000;
 	color: #ffffff;
 	padding-top: 98px;
-	min-height: 765px;
+	min-height: 702px;
 }
 
 .page-footer a {
 	color: #ffffff;
 }
 
-.main-menu_hidden {
-	visibility: hidden;
+.main-menu_list {
+	display: none;
+}
+
+.modal-show {
+	display: block;
 }
 
 /*============*/
@@ -130,6 +134,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-iner-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -175,6 +181,8 @@ input[type="radio"].visually-hidden {
 
 .logo-iner {
 	margin-left: 364px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -190,7 +198,11 @@ input[type="radio"].visually-hidden {
 	margin-left: 243px;
 	margin-top: 10px;
 	width: 140px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -251,8 +263,8 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .slide_button-download-ios,
@@ -264,14 +276,14 @@ input[type="radio"].visually-hidden {
 	height: 39px;
 	cursor: pointer;
 	width: 69px;
-  height: 69px;
-  background-color: #fcdb00;
+	height: 69px;
+	background-color: #fcdb00;
 	border: solid 2px #000000;
 	border-radius: 50%;
 }
 
 .slide_button-download-ios {
-	background-image: url(../img/icon-apple.png);	
+	background-image: url(../img/icon-apple.png);
 }
 
 .slide_button-download-android {
@@ -329,29 +341,29 @@ input[type="radio"].visually-hidden {
 
 .radio-1:checked~.slider_inner .slider-slides {
 	-webkit-transform: translate(0);
-	    -ms-transform: translate(0);
-	        transform: translate(0);
+	-ms-transform: translate(0);
+	transform: translate(0);
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out;
 }
 
 .radio-2:checked~.slider_inner .slider-slides {
 	-webkit-transform: translate(-940px);
-	    -ms-transform: translate(-940px);
-	        transform: translate(-940px);
+	-ms-transform: translate(-940px);
+	transform: translate(-940px);
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out;
 }
 
 .radio-3:checked~.slider_inner .slider-slides {
 	-webkit-transform: translate(-1880px);
-	    -ms-transform: translate(-1880px);
-	        transform: translate(-1880px);
+	-ms-transform: translate(-1880px);
+	transform: translate(-1880px);
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out;
 }
 
 
@@ -368,24 +380,13 @@ input[type="radio"].visually-hidden {
 }
 
 .features_text {
-	position: relative;
 	font-size: 20px;
 	line-height: 24px;
 	margin: 0 auto;
 	text-align: center;
 	color: #898989;
 	width: 765px;
-	margin-bottom: 85px;
-}
-
-.features_text::after {
-	position: absolute;
-	content: "";
-	width: 940px;
-	height: 1px;
-	background-color: #313841;
-	top: 85px;
-	left: 0;
+	margin-bottom: 119px;
 }
 
 .features_item-caption {
@@ -400,67 +401,44 @@ input[type="radio"].visually-hidden {
 	color: #898989;
 }
 
+.features_list-iner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
 .features_list {
 	position: relative;
-	padding-left: 80px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .features_item {
 	width: 220px;
 	min-height: 130px;
-	margin-right: 100px;
 	margin-bottom: 69px;
 }
 
-.features_item:nth-child(3n) {
-	margin-right: 0;
+.column-left {
+	padding-left: 12px;
 }
 
-.features_item::before {
-	position: absolute;
-	content: "";
-	margin-left: -70px;
+.page-main__features {
+	background-image: url(../img/iPad.png);
+	background-repeat: no-repeat;
+	background-position: center 155px;
+	min-height: 625px;
 }
-
-.features_item_bg-1::before {
-	background-image: url(../img/icon-font-1.png);
-	width: 33px;
-	height: 40px;
-}
-
-.features_item_bg-2::before {
-	background-image: url(../img/icon-font-2.png);
-	width: 43px;
-  	height: 44px;
-}
-
-.features_item_bg-3::before {
-	background-image: url(../img/icon-font-3.png);
-	width: 47px;
-  	height: 40px;
-}
-
-.features_item_bg-4::before {
-	background-image: url(../img/icon-font-4.png);
-	width: 52px;
-  	height: 39px;
-}
-
-.features_item_bg-5::before {
-	background-image: url(../img/icon-font-5.png);
-	width: 51px;
-	height: 40px;
- }
-
- .features_item_bg-6::before {
-	background-image: url(../img/icon-font-6.png);
-	width: 36px;
-	height: 43px; }
 
 /*============*/
 /* FOOTER */
@@ -487,7 +465,7 @@ input[type="radio"].visually-hidden {
 
 .page-footer__form-search {
 	margin-left: 103px;
-	margin-bottom: 78px
+	margin-bottom: 110px
 }
 
 .form-search_input {
@@ -533,7 +511,7 @@ input[type="radio"].visually-hidden {
 	color: #898989;
 }
 
-.form-search_input:-ms-input-placeholder  {
+.form-search_input:-ms-input-placeholder {
 	font-size: 16px;
 	color: #898989;
 }
@@ -543,8 +521,6 @@ input[type="radio"].visually-hidden {
 	margin-left: 19px;
 }
 
-
-
 .page-footer__iner,
 .page-footer__menu {
 	display: -webkit-box;
@@ -553,8 +529,6 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 20px;
 }
-
-
 
 .page-footer__iner {
 	padding-left: 10px;
@@ -576,8 +550,8 @@ input[type="radio"].visually-hidden {
 	margin-left: 90px;
 	width: 560px;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .menu_document,
