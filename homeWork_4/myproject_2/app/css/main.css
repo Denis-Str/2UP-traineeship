@@ -117,13 +117,17 @@ input[type="radio"].visually-hidden {
 	color: #ffffff;
 }
 
-.main-menu_list {
+/* .main-menu_list {
 	display: none;
+} */
+
+.page-header__main-menu {
+	visibility: hidden;
 }
 
-.modal-show {
+/* .modal-show {
 	display: block;
-}
+} */
 
 /*============*/
 /* HEADER */
