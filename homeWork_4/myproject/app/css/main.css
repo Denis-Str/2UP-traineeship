@@ -333,7 +333,7 @@ input[type="radio"].visually-hidden {
 	height: 1px;
 	background-color: #313841;
 	top: 85px;
-	left: 0;
+	left: -85px;
 }
 
 .features_item-caption {
