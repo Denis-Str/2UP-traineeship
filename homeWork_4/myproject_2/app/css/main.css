@@ -22,12 +22,22 @@ body {
     -webkit-box-sizing: inherit;
     box-sizing: inherit; }
 
-.main-menu_list, .features_list, .page-header__socials_list, .menu_document, .menu_about-us, .menu_support, .menu_site {
+.main-menu_list,
+.features_list,
+.page-header__socials_list,
+.menu_document, .menu_about-us,
+.menu_support, .menu_site {
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.page-header__title, .slide_caption, .slide_text, .slide_desc, .features_caption, .features_text, .features_item-caption, .features_item-text, .page-footer__caption, .page-footer__text, .contacts_caption, .contacts_address {
+.page-header__title,
+.slide_caption, .slide_text,
+.slide_desc, .features_caption,
+.features_text, .features_item-caption,
+.features_item-text, .page-footer__caption,
+.page-footer__text, .contacts_caption,
+.contacts_address {
   margin: 0;
   padding: 0; }
 
@@ -43,7 +53,8 @@ a {
   padding-right: 10px;
   margin: 0 auto; }
 
-.visually-hidden:not(:focus):not(:active), input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -104,7 +115,8 @@ a {
 .page-iner-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .page-iner {
   position: relative;
@@ -141,7 +153,6 @@ a {
   font-weight: bold; }
 
 .logo-iner {
-  margin-left: 364px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -153,7 +164,6 @@ a {
   padding: 6px 10px; }
 
 .page-header__socials_list {
-  margin-left: 243px;
   margin-top: 10px;
   width: 140px;
   display: -webkit-box;
@@ -215,7 +225,9 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.slide_button-download-ios, .slide_button-download-android, .slide_button-download-windows {
+.slide_button-download-ios,
+.slide_button-download-android,
+.slide_button-download-windows {
   background-repeat: no-repeat;
   background-position: center;
   width: 33px;
@@ -265,7 +277,9 @@ a {
     .slider_controls label:hover {
       background-color: rgba(255, 255, 255, 0.7); }
 
-.radio-1:checked ~ .slider_controls label[for="radio-1"], .radio-2:checked ~ .slider_controls label[for="radio-2"], .radio-3:checked ~ .slider_controls label[for="radio-3"] {
+.radio-1:checked ~ .slider_controls label[for="radio-1"],
+.radio-2:checked ~ .slider_controls label[for="radio-2"],
+.radio-3:checked ~ .slider_controls label[for="radio-3"] {
   background-color: white; }
 
 .radio-1:checked ~ .slider_inner .slider-slides {
@@ -419,5 +433,8 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.menu_document, .menu_about-us, .menu_support, .menu_site {
+.menu_document,
+.menu_about-us,
+.menu_support,
+.menu_site {
   width: 80px; }
