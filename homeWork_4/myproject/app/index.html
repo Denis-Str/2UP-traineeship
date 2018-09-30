@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="краткое описание">
 	<title>Tinyone</title>
@@ -14,23 +15,23 @@
 
 <body>
 
-	<header class="page-header">
+	<header>
 		<div class="page-wrapper">
-			<div class="inner-container">
-				<div class="row-wrappper">
+			<div class="page-header__content">
+				<div class="logo">
 					<img src="./img/logo.png" width="43" height="43" alt="logo">
-					<h1 class="page-header__title">tinyone</h1>
+					<h1 class="title">tinyone</h1>
 				</div>
-				<nav class="page-header__main-menu">
-					<ul class="main-menu_list">
-						<li class="main-menu_item">
-							<a href="#" class="main-menu_link">Features</a>
+				<nav class="main-menu">
+					<ul class="main-menu-list">
+						<li class="main-menu-item">
+							<a href="#" class="main-menu-link">Features</a>
 						</li>
-						<li class="main-menu_item">
-							<a href="#" class="main-menu_link">Support</a>
+						<li class="main-menu-item">
+							<a href="#" class="main-menu-link">Support</a>
 						</li>
-						<li class="main-menu_item">
-							<a href="#" class="main-menu_link">Blog</a>
+						<li class="main-menu-item">
+							<a href="#" class="main-menu-link">Blog</a>
 						</li>
 					</ul>
 				</nav>
@@ -59,13 +60,13 @@
 								lobortis sit
 							</p>
 							<div class="slide_buttons">
-								<button class="button slide_button-download-ios">
+								<button class="download-ios">
 									<span class="visually-hidden">ios</span>
 								</button>
-								<button class="button slide_button-download-android">
+								<button class="download-android">
 									<span class="visually-hidden">android</span>
 								</button>
-								<button class="button slide_button-download-windows">
+								<button class="download-windows">
 									<span class="visually-hidden">windows</span>
 								</button>
 							</div>
@@ -83,13 +84,13 @@
 								lobortis sit
 							</p>
 							<div class="slide_buttons">
-								<button class="button slide_button-download-ios">
+								<button class="download-ios">
 									<span class="visually-hidden">ios</span>
 								</button>
-								<button class="button slide_button-download-android">
+								<button class="download-android">
 									<span class="visually-hidden">android</span>
 								</button>
-								<button class="button slide_button-download-windows">
+								<button class="download-windows">
 									<span class="visually-hidden">windows</span>
 								</button>
 							</div>
@@ -107,13 +108,13 @@
 								lobortis sit
 							</p>
 							<div class="slide_buttons">
-								<button class="button slide_button-download-ios">
+								<button class="download-ios">
 									<span class="visually-hidden">ios</span>
 								</button>
-								<button class="button slide_button-download-android">
+								<button class="download-android">
 									<span class="visually-hidden">android</span>
 								</button>
-								<button class="button slide_button-download-windows">
+								<button class="download-windows">
 									<span class="visually-hidden">windows</span>
 								</button>
 							</div>
@@ -125,56 +126,54 @@
 	</header>
 
 	<main class="page-main">
-		<div class="page-wrapper">
-			<section class="page-main__features">
-				<h2 class="features_caption">
-					Tinyone features
-				</h2>
-				<p class="features_text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus<br> tristique bibendum.
-					Donec
-					rutrum sed sem quis venenatis.
-				</p>
-				<ul class="features_list">
-					<li class="features_item features_item_bg-1">
-						<h3 class="features_item-caption">Fully Responsive</h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-					<li class="features_item features_item_bg-2">
-						<h3 class="features_item-caption">Fully Layered PSD</h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-					<li class="features_item features_item_bg-3">
-						<h3 class="features_item-caption">Font Awesome Icons</h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-					<li class="features_item features_item_bg-4">
-						<h3 class="features_item-caption">HTML3 &amp; CSS3 </h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-					<li class="features_item features_item_bg-5">
-						<h3 class="features_item-caption">Email Template</h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-					<li class="features_item features_item_bg-6">
-						<h3 class="features_item-caption">Free to download</h3>
-						<p class="features_item-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-						</p>
-					</li>
-				</ul>
-			</section>
-		</div>
+		<section class="page-main__features page-wrapper">
+			<h2 class="features_caption">
+				Tinyone features
+			</h2>
+			<p class="features_text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+				Donec
+				rutrum sed sem quis venenatis.
+			</p>
+			<ul class="features_list">
+				<li class="features_item responsive">
+					<h3 class="features_item-caption">Fully Responsive</h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+				<li class="features_item layered-psd">
+					<h3 class="features_item-caption">Fully Layered PSD</h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+				<li class="features_item font-awesome">
+					<h3 class="features_item-caption">Font Awesome Icons</h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+				<li class="features_item html-css">
+					<h3 class="features_item-caption">HTML3 &amp; CSS3 </h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+				<li class="features_item email-template">
+					<h3 class="features_item-caption">Email Template</h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+				<li class="features_item free-to-download">
+					<h3 class="features_item-caption">Free to download</h3>
+					<p class="features_item-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+					</p>
+				</li>
+			</ul>
+		</section>
 	</main>
 
 	<footer class="page-footer">
@@ -186,14 +185,13 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec
 				rutrum sed sem quis venenatis.
 			</p>
-			<form action="https://echo.htmlacademy.ru" method="GET" class="page-footer__form-search">
-				<input type="search" id="form-search_input" class="form-search_input" placeholder="Enter your email to update"
-				 style="padding-left: 24px;">
-				<button type="submit" class="button form-search_submit">
+			<form action="https://echo.htmlacademy.ru" method="GET" class="page-footer__search">
+				<input type="search" id="search-input" class="search-input" placeholder="Enter your email to update" style="padding-left: 24px;">
+				<button type="submit" class="search-submit">
 					submit
 				</button>
 			</form>
-			<ul class="page-footer__socials_list">
+			<ul class="page-footer__socials">
 				<li class="socials_item">
 					<a href="#" class="socials_link socials_link-facebook"><span class="visually-hidden">facebook</span></a>
 				</li>
@@ -207,7 +205,7 @@
 					<a href="#" class="socials_link socials_link-pinterest"><span class="visually-hidden">pinterest</span></a>
 				</li>
 			</ul>
-			<div class="page-footer__iner">
+			<div class="page-footer__menu-contacts">
 				<div class="page-footer_contacts">
 					<p class="contacts_caption">
 						<span>halovietnam ltd</span>
@@ -272,8 +270,11 @@
 					</ul>
 				</nav>
 			</div>
+
 		</div>
 	</footer>
+
+
 
 </body>
 
